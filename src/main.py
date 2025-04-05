@@ -10,7 +10,8 @@ client.remove_command('help')  # Removes help command so I can use my own
 async def help(ctx):
     await ctx.send("Hello there! (•◡•) /\n"
                     "I am a bot that converts text into a friendly ont!\n"
-                    "Use '/friendify \\{your message here\\}' to try it out!\n")
+                    "Use '/friendify \\{your message here\\}' to try it out!\n"
+                    "Use '/off' to set the bot offline.\n")
 
 @client.event  # Tells me if this is running in the console
 async def on_ready():
